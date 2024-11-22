@@ -8,3 +8,7 @@ gcloud projects get-iam-policy video-editor-441419 \
 
 gcloud billing accounts describe 01B0D0-A7FB8D-AA6B68
 
+https://storage.googleapis.com/shaz-video-editor-bucket/uploads/1731970635_IMG_9769.mov
+
+Hello are you available for work? I have a an existing codebase but need someone to fix some errors and add some functions. It's a python application.
+I have an automated editing program that generates instructions and applies them to footage I upload. I need you to debug the application and make sure that the ffmpeg instructions are applied properly. I also need you to integrate a sound and sound effects library which we have created into the video creation flow.  finally I need you to add one function to the frontend which is a user inputs the name of a YouTube creator or filmmaker and we generate the instructions. We have all the logic for this process we just need to add the input field to the frontend.
