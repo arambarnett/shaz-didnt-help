@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+
+# Environment & Credentials
+.env
+video-editor-credentials.json
+*.json
+
+# Temporary files
+/tmp/
+/uploads/
+/input/
+/output/
+*.mp4
+*.mov
+*.wav
+*.m4a
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Logs

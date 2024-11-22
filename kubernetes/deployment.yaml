@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ai-editor-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ai-editor-app
+  template:
+    metadata:
+      labels:
+        app: ai-editor-app
+    spec:
+      containers:
+      - name: ai-editor-app
+        image: gcr.io/video-editor-434002/ai-editor-app:v1
+        resources:
+          requests:
+            cpu: 2
+            memory: 4Gi
+          limits:
+            cpu: 4
+            memory: 8Gi
+        env:
+        - name: PORT
+          value: "8080"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ai-editor-app-service
+spec:
+  selector:
+    app: ai-editor-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+  type: LoadBalancer

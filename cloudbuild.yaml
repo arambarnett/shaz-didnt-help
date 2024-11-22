@@ -1,0 +1,44 @@
+steps:
+  # Build the container image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/video-editor-441419/video-editor:$COMMIT_SHA', 
+           '--build-arg', 'FFMPEG_VERSION=7.1',
+           '.']
+
+  # Push the container image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/video-editor-441419/video-editor:$COMMIT_SHA']
+
+  # Deploy to Cloud Run
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
+    args:
+      - 'run'
+      - 'deploy'
+      - 'video-editor'
+      - '--image'
+      - 'gcr.io/video-editor-441419/video-editor:$COMMIT_SHA'
+      - '--region'
+      - 'us-central1'
+      - '--platform'
+      - 'managed'
+      - '--allow-unauthenticated'
+      - '--memory'
+      - '8Gi'
+      - '--cpu'
+      - '4'
+      - '--set-env-vars'
+      - 'GCS_BUCKET_NAME=shaz-video-editor-bucket,OPENAI_API_KEY=${_OPENAI_API_KEY}'
+      - '--service-account'
+      - 'video-editor-sa@video-editor-441419.iam.gserviceaccount.com'
+      - '--max-instances'
+      - '10'
+      - '--min-instances'
+      - '1'
+      - '--timeout'
+      - '3600'
+      - '--cpu-boost'
+      - 'true'
+
+images:
+  - 'gcr.io/video-editor-441419/video-editor:$COMMIT_SHA'

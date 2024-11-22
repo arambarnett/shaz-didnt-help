@@ -1,0 +1,954 @@
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/folders/b5/lx88tlg93w98_y3_7w01s3180000gn/T/tmpblhwhtmh/input_1.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+    creation_time   : 2024-08-29T21:26:01.000000Z
+    com.apple.quicktime.make: Apple
+    com.apple.quicktime.model: iPhone 13 Pro Max
+    com.apple.quicktime.software: 17.5.1
+    com.apple.quicktime.creationdate: 2024-08-28T18:17:44-0700
+    com.apple.photos.originating.signature: AVQAJTV8XW3qitO+dOed1+WIXEFd
+  Duration: 00:00:20.20, start: 0.000000, bitrate: 7757 kb/s
+  Stream #0:0[0x1](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 97 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:01.000000Z
+        handler_name    : Core Media Audio
+        vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 720x1280 [SAR 1:1 DAR 9:16], 7600 kb/s, 30 fps, 30 tbr, 600 tbn (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:01.000000Z
+        handler_name    : Core Media Video
+        vendor_id       : [0][0][0][0]
+        encoder         : H.264
+  Stream #0:2[0x3](und): Data: none (mebx / 0x7862656D), 0 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:01.000000Z
+        handler_name    : Core Media Metadata
+  Stream #0:3[0x4](und): Data: none (mebx / 0x7862656D), 7 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:01.000000Z
+        handler_name    : Core Media Metadata
+  Stream #0:4[0x5](und): Data: none (mebx / 0x7862656D), 42 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:01.000000Z
+        handler_name    : Core Media Metadata
+Stream mapping:
+  Stream #0:0 -> #0:0 (aac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to '/var/folders/b5/lx88tlg93w98_y3_7w01s3180000gn/T/tmpblhwhtmh/audio_1.wav':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+    com.apple.photos.originating.signature: AVQAJTV8XW3qitO+dOed1+WIXEFd
+    com.apple.quicktime.make: Apple
+    com.apple.quicktime.model: iPhone 13 Pro Max
+    com.apple.quicktime.software: 17.5.1
+    com.apple.quicktime.creationdate: 2024-08-28T18:17:44-0700
+    ISFT            : Lavf61.7.100
+  Stream #0:0(und): Audio: pcm_s16le ([1][0][0][0] / 0x0001), 44100 Hz, mono, s16, 705 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:01.000000Z
+        handler_name    : Core Media Audio
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.100 pcm_s16le
+[out#0/wav @ 0x7f8b75805a80] video:0KiB audio:1742KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.004373%
+size=    1742KiB time=00:00:20.22 bitrate= 705.6kbits/s speed= 817x    
+2024-11-19 16:54:17,889 - progress_tracker - INFO - Progress update for c7e82179-f272-4580-9974-0911427a69e5: download - 40% - Processing video 3 of 4
+2024-11-19 16:54:17,889 - transcriber - INFO - Accessing bucket: shaz-video-editor-bucket, blob: uploads/1732053239_IMG_9768.mov
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_3 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/folders/b5/lx88tlg93w98_y3_7w01s3180000gn/T/tmpblhwhtmh/input_2.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+    creation_time   : 2024-08-29T21:26:05.000000Z
+    com.apple.quicktime.make: Apple
+    com.apple.quicktime.model: iPhone 13 Pro Max
+    com.apple.quicktime.software: 17.5.1
+    com.apple.quicktime.creationdate: 2024-08-28T18:18:09-0700
+    com.apple.photos.originating.signature: AdJQb549VkZboQjmITq4aIGROFSM
+  Duration: 00:00:18.87, start: 0.000000, bitrate: 7642 kb/s
+  Stream #0:0[0x1](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 97 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:05.000000Z
+        handler_name    : Core Media Audio
+        vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 720x1280 [SAR 1:1 DAR 9:16], 7472 kb/s, 30 fps, 30 tbr, 600 tbn (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:05.000000Z
+        handler_name    : Core Media Video
+        vendor_id       : [0][0][0][0]
+        encoder         : H.264
+  Stream #0:2[0x3](und): Data: none (mebx / 0x7862656D), 0 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:05.000000Z
+        handler_name    : Core Media Metadata
+  Stream #0:3[0x4](und): Data: none (mebx / 0x7862656D), 18 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:05.000000Z
+        handler_name    : Core Media Metadata
+  Stream #0:4[0x5](und): Data: none (mebx / 0x7862656D), 44 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:05.000000Z
+        handler_name    : Core Media Metadata
+Stream mapping:
+  Stream #0:0 -> #0:0 (aac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to '/var/folders/b5/lx88tlg93w98_y3_7w01s3180000gn/T/tmpblhwhtmh/audio_2.wav':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+    com.apple.photos.originating.signature: AdJQb549VkZboQjmITq4aIGROFSM
+    com.apple.quicktime.make: Apple
+    com.apple.quicktime.model: iPhone 13 Pro Max
+    com.apple.quicktime.software: 17.5.1
+    com.apple.quicktime.creationdate: 2024-08-28T18:18:09-0700
+    ISFT            : Lavf61.7.100
+  Stream #0:0(und): Audio: pcm_s16le ([1][0][0][0] / 0x0001), 44100 Hz, mono, s16, 705 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:05.000000Z
+        handler_name    : Core Media Audio
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.100 pcm_s16le
+[out#0/wav @ 0x7fc0b9705b80] video:0KiB audio:1626KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.004685%
+size=    1626KiB time=00:00:18.87 bitrate= 705.6kbits/s speed= 847x    
+2024-11-19 16:54:23,930 - progress_tracker - INFO - Progress update for c7e82179-f272-4580-9974-0911427a69e5: download - 50% - Processing video 4 of 4
+2024-11-19 16:54:23,930 - transcriber - INFO - Accessing bucket: shaz-video-editor-bucket, blob: uploads/1732053241_IMG_9769.mov
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_3 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/folders/b5/lx88tlg93w98_y3_7w01s3180000gn/T/tmpblhwhtmh/input_3.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+    creation_time   : 2024-08-29T21:26:11.000000Z
+    com.apple.quicktime.make: Apple
+    com.apple.quicktime.model: iPhone 13 Pro Max
+    com.apple.quicktime.software: 17.5.1
+    com.apple.quicktime.creationdate: 2024-08-28T18:18:36-0700
+    com.apple.photos.originating.signature: Af38TXxYDPwBGzTNepBGX+fpGtJn
+  Duration: 00:00:24.60, start: 0.000000, bitrate: 7624 kb/s
+  Stream #0:0[0x1](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 96 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:11.000000Z
+        handler_name    : Core Media Audio
+        vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 720x1280 [SAR 1:1 DAR 9:16], 7450 kb/s, 30 fps, 30 tbr, 600 tbn (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:11.000000Z
+        handler_name    : Core Media Video
+        vendor_id       : [0][0][0][0]
+        encoder         : H.264
+  Stream #0:2[0x3](und): Data: none (mebx / 0x7862656D), 0 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:11.000000Z
+        handler_name    : Core Media Metadata
+  Stream #0:3[0x4](und): Data: none (mebx / 0x7862656D), 20 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:11.000000Z
+        handler_name    : Core Media Metadata
+  Stream #0:4[0x5](und): Data: none (mebx / 0x7862656D), 47 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:11.000000Z
+        handler_name    : Core Media Metadata
+Stream mapping:
+  Stream #0:0 -> #0:0 (aac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to '/var/folders/b5/lx88tlg93w98_y3_7w01s3180000gn/T/tmpblhwhtmh/audio_3.wav':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+    com.apple.photos.originating.signature: Af38TXxYDPwBGzTNepBGX+fpGtJn
+    com.apple.quicktime.make: Apple
+    com.apple.quicktime.model: iPhone 13 Pro Max
+    com.apple.quicktime.software: 17.5.1
+    com.apple.quicktime.creationdate: 2024-08-28T18:18:36-0700
+    ISFT            : Lavf61.7.100
+  Stream #0:0(und): Audio: pcm_s16le ([1][0][0][0] / 0x0001), 44100 Hz, mono, s16, 705 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:11.000000Z
+        handler_name    : Core Media Audio
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.100 pcm_s16le
+[out#0/wav @ 0x7f7a37104140] video:0KiB audio:2120KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.003593%
+size=    2120KiB time=00:00:24.61 bitrate= 705.6kbits/s speed= 833x    
+2024-11-19 16:54:30,654 - progress_tracker - INFO - Progress update for c7e82179-f272-4580-9974-0911427a69e5: analyze - 60% - Analyzing content
+2024-11-19 16:55:10,934 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-19 16:55:10,939 - editing_instructions - INFO - OpenAI Raw Response: {
+  "segments": [
+    {
+      "start_time": "00:00.000",
+      "end_time": "00:00.500",
+      "effect_type": "fade",
+      "ffmpeg_filter": "fade=t=in:st=0:d=0.5",
+      "parameters": {}
+    },
+    {
+      "start_time": "00:01.000",
+      "end_time": "00:03.000",
+      "effect_type": "text_overlay",
+      "ffmpeg_filter": "drawtext=text='What's up, everybody? I'm out here with my boy Nye and we're about to go on a rock hunt.':fontsize=30:fontcolor=white:x=(w-text_w)/2:y=(h-text_h)/2:box=1:boxcolor=black@0.5",
+      "parameters": {
+        "text": "What's up, everybody? I'm out here with my boy Nye and we're about to go on a rock hunt.",
+        "position": "center",
+        "font_size": 30
+      }
+    },
+    {
+      "start_time": "00:15.000",
+      "end_time": "00:17.000",
+      "effect_type": "zoom",
+      "ffmpeg_filter": "scale=iw*1.2:-1,crop=iw/1.2:ih/1.2",
+      "parameters": {
+        "zoom": 1.2
+      }
+    },
+    {
+      "start_time": "00:40.000",
+      "end_time": "00:42.000",
+      "effect_type": "text_overlay",
+      "ffmpeg_filter": "drawtext=text='Whoa, check out this ball. Whoa.':fontsize=30:fontcolor=white:x=(w-text_w)/2:y=(h-text_h)/2:box=1:boxcolor=black@0.5",
+      "parameters": {
+        "text": "Whoa, check out this ball. Whoa.",
+        "position": "center",
+        "font_size": 30
+      }
+    },
+    {
+      "start_time": "01:10.000",
+      "end_time": "01:12.000",
+      "effect_type": "zoom",
+      "ffmpeg_filter": "scale=iw*1.5:-1,crop=iw/1.5:ih/1.5",
+      "parameters": {
+        "zoom": 1.5
+      }
+    },
+    {
+      "start_time": "01:30.000",
+      "end_time": "01:32.000",
+      "effect_type": "text_overlay",
+      "ffmpeg_filter": "drawtext=text='All right, Rock Nation. We did it.':fontsize=30:fontcolor=white:x=(w-text_w)/2:y=(h-text_h)/2:box=1:boxcolor=black@0.5",
+      "parameters": {
+        "text": "All right, Rock Nation. We did it.",
+        "position": "center",
+        "font_size": 30
+      }
+    },
+    {
+      "start_time": "01:33.000",
+      "end_time": "01:35.000",
+      "effect_type": "zoom",
+      "ffmpeg_filter": "scale=iw*1.5:-1,crop=iw/1.5:ih/1.5",
+      "parameters": {
+        "zoom": 1.5
+      }
+    },
+    {
+      "start_time": "01:36.300",
+      "end_time": "01:36.800",
+      "effect_type": "fade",
+      "ffmpeg_filter": "fade=t=out:st=76.3:d=0.5",
+      "parameters": {}
+    }
+  ]
+}
+2024-11-19 16:55:10,939 - progress_tracker - INFO - Progress update for c7e82179-f272-4580-9974-0911427a69e5: edit - 80% - Processing videos
+2024-11-19 16:55:13,925 - transcriber - INFO - Running concat command: ffmpeg -y -f concat -safe 0 -i /tmp/tmpb8ju6zgl/concat.txt -c:v libx264 -preset medium -crf 23 -maxrate 8M -bufsize 16M -pix_fmt yuv420p -c:a aac -b:a 192k -movflags +faststart /tmp/tmpb8ju6zgl/base.mp4
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_3 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fb6f5905100] Auto-inserting h264_mp4toannexb bitstream filter
+[concat @ 0x7fb6f5904600] Could not find codec parameters for stream 2 (Unknown: none): unknown codec
+Consider increasing the value for the 'analyzeduration' (0) and 'probesize' (5000000) options
+[concat @ 0x7fb6f5904600] Could not find codec parameters for stream 3 (Unknown: none): unknown codec
+Consider increasing the value for the 'analyzeduration' (0) and 'probesize' (5000000) options
+[concat @ 0x7fb6f5904600] Could not find codec parameters for stream 4 (Unknown: none): unknown codec
+Consider increasing the value for the 'analyzeduration' (0) and 'probesize' (5000000) options
+Input #0, concat, from '/tmp/tmpb8ju6zgl/concat.txt':
+  Duration: N/A, start: -0.047891, bitrate: 7511 kb/s
+  Stream #0:0(und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 97 kb/s
+      Metadata:
+        creation_time   : 2024-08-29T21:25:58.000000Z
+        handler_name    : Core Media Audio
+        vendor_id       : [0][0][0][0]
+  Stream #0:1(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 720x1280 [SAR 1:1 DAR 9:16], 7414 kb/s, 30 fps, 30 tbr, 600 tbn
+      Metadata:
+        creation_time   : 2024-08-29T21:25:58.000000Z
+        handler_name    : Core Media Video
+        vendor_id       : [0][0][0][0]
+        encoder         : H.264
+  Stream #0:2: Unknown: none
+  Stream #0:3: Unknown: none
+  Stream #0:4: Unknown: none
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+  Stream #0:0 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+[libx264 @ 0x7fb6f4f5fd80] using SAR=1/1
+[libx264 @ 0x7fb6f4f5fd80] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0x7fb6f4f5fd80] profile High, level 3.1, 4:2:0, 8-bit
+[libx264 @ 0x7fb6f4f5fd80] 264 - core 164 r3108 31e19f9 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=18 lookahead_threads=3 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 vbv_maxrate=8000 vbv_bufsize=16000 crf_max=0.0 nal_hrd=none filler=0 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/tmp/tmpb8ju6zgl/base.mp4':
+  Metadata:
+    encoder         : Lavf61.7.100
+  Stream #0:0(und): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 720x1280 [SAR 1:1 DAR 9:16], q=2-31, 30 fps, 15360 tbn
+      Metadata:
+        creation_time   : 2024-08-29T21:25:58.000000Z
+        handler_name    : Core Media Video
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.100 libx264
+      Side data:
+        cpb: bitrate max/min/avg: 8000000/0/0 buffer size: 16000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 192 kb/s
+      Metadata:
+        creation_time   : 2024-08-29T21:25:58.000000Z
+        handler_name    : Core Media Audio
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.100 aac
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fb6f5915e00] Auto-inserting h264_mp4toannexb bitstream filter.4x    
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fb6f5b27a80] Auto-inserting h264_mp4toannexb bitstream filter62x    
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fb6f4f47cc0] Auto-inserting h264_mp4toannexb bitstream filter51x    
+[mp4 @ 0x7fb6f4f5f080] Starting second pass: moving the moov atom to the beginning of the file    
+[out#0/mp4 @ 0x7fb6f4f5efc0] video:39150KiB audio:2000KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.215092%
+frame= 2513 fps=101 q=-1.0 Lsize=   41238KiB time=00:01:23.76 bitrate=4032.9kbits/s speed=3.38x    
+[libx264 @ 0x7fb6f4f5fd80] frame I:23    Avg QP:22.19  size: 51206
+[libx264 @ 0x7fb6f4f5fd80] frame P:1128  Avg QP:24.90  size: 25999
+[libx264 @ 0x7fb6f4f5fd80] frame B:1362  Avg QP:27.42  size:  7037
+[libx264 @ 0x7fb6f4f5fd80] consecutive B-frames: 11.5% 47.2%  4.2% 37.1%
+[libx264 @ 0x7fb6f4f5fd80] mb I  I16..4: 14.8% 70.6% 14.6%
+[libx264 @ 0x7fb6f4f5fd80] mb P  I16..4:  9.1% 28.5%  2.9%  P16..4: 34.7% 11.7%  4.9%  0.0%  0.0%    skip: 8.2%
+[libx264 @ 0x7fb6f4f5fd80] mb B  I16..4:  1.4%  3.6%  0.3%  B16..8: 41.1%  4.9%  0.8%  direct: 2.5%  skip:45.2%  L0:38.4% L1:51.1% BI:10.5%
+[libx264 @ 0x7fb6f4f5fd80] 8x8 transform intra:70.0% inter:82.0%
+[libx264 @ 0x7fb6f4f5fd80] coded y,uvDC,uvAC intra: 49.3% 67.3% 17.4% inter: 18.6% 20.1% 1.0%
+[libx264 @ 0x7fb6f4f5fd80] i16 v,h,dc,p: 29% 27% 15% 29%
+[libx264 @ 0x7fb6f4f5fd80] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 25% 19% 20%  5%  6%  7%  6%  6%  6%
+[libx264 @ 0x7fb6f4f5fd80] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 23% 19% 13%  6% 10%  9%  9%  6%  5%
+[libx264 @ 0x7fb6f4f5fd80] i8c dc,h,v,p: 47% 22% 23%  8%
+[libx264 @ 0x7fb6f4f5fd80] Weighted P-Frames: Y:4.3% UV:1.2%
+[libx264 @ 0x7fb6f4f5fd80] ref P L0: 70.7% 21.6%  6.0%  1.7%  0.1%
+[libx264 @ 0x7fb6f4f5fd80] ref B L0: 96.4%  3.1%  0.5%
+[libx264 @ 0x7fb6f4f5fd80] ref B L1: 99.5%  0.5%
+[libx264 @ 0x7fb6f4f5fd80] kb/s:3827.11
+[aac @ 0x7fb6f5846940] Qavg: 526.684
+2024-11-19 16:55:39,170 - editing_instructions - INFO - Running FFmpeg command: ffmpeg -y -i /tmp/tmpb8ju6zgl/base.mp4 -filter_complex [0:v]fade=t=in:st=0.0:d=0.5,fade=t=out:st=0.0:d=0.5,zoompan=z='if(between(t,15.0,17.0),1.2,1)':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)',zoompan=z='if(between(t,70.0,72.0),1.5,1)':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)',zoompan=z='if(between(t,93.0,95.0),1.5,1)':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)',fade=t=in:st=96.3:d=0.5,fade=t=out:st=96.3:d=0.5[v];[0:a]afade=t=in:st=0.0:d=0.5,afade=t=out:st=0.0:d=0.5,afade=t=in:st=96.3:d=0.5,afade=t=out:st=96.3:d=0.5[a] -map [v] -map [a] -c:v libx264 -preset medium -crf 23 -maxrate 8M -bufsize 16M -pix_fmt yuv420p -c:a aac -b:a 192k -ar 44100 -ac 2 /tmp/tmp112nn0nt/output.mp4
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_3 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/tmp/tmpb8ju6zgl/base.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.100
+  Duration: 00:01:23.81, start: 0.023991, bitrate: 4030 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 720x1280 [SAR 1:1 DAR 9:16], 3827 kb/s, 29.99 fps, 30 tbr, 15360 tbn (default)
+      Metadata:
+        handler_name    : Core Media Video
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.100 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 195 kb/s (default)
+      Metadata:
+        handler_name    : Core Media Audio
+        vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 (h264) -> fade:default
+  Stream #0:1 (aac) -> afade:default
+  fade:default -> Stream #0:0 (libx264)
+  afade:default -> Stream #0:1 (aac)
+Press [q] to stop, [?] for help
+[Parsed_zoompan_2 @ 0x7fbac4e05380] [Eval @ 0x7000020e60b8] Undefined constant or missing '(' in 't,15.0,17.0),1.2,1)'
+[Parsed_zoompan_2 @ 0x7fbac4e05380] Failed to configure output pad on Parsed_zoompan_2
+[fc#0 @ 0x7fbac4a04700] Error reinitializing filters!
+[fc#0 @ 0x7fbac4a04700] Task finished with error code: -22 (Invalid argument)
+[fc#0 @ 0x7fbac4a04700] Terminating thread with return code -22 (Invalid argument)
+[vost#0:0/libx264 @ 0x7fbac49059c0] Could not open encoder before EOF
+[vost#0:0/libx264 @ 0x7fbac49059c0] Task finished with error code: -22 (Invalid argument)
+[vost#0:0/libx264 @ 0x7fbac49059c0] Terminating thread with return code -22 (Invalid argument)
+[aost#0:1/aac @ 0x7fbac4906d80] Could not open encoder before EOF
+[aost#0:1/aac @ 0x7fbac4906d80] Task finished with error code: -22 (Invalid argument)
+[aost#0:1/aac @ 0x7fbac4906d80] Terminating thread with return code -22 (Invalid argument)
+[out#0/mp4 @ 0x7fbac4904f40] Nothing was written into output file, because at least one of its streams received no packets.
+frame=    0 fps=0.0 q=0.0 Lsize=       0KiB time=N/A bitrate=N/A speed=N/A    
+Conversion failed!
+2024-11-19 16:55:39,834 - editing_instructions - ERROR - Error applying effects: Command '['ffmpeg', '-y', '-i', '/tmp/tmpb8ju6zgl/base.mp4', '-filter_complex', "[0:v]fade=t=in:st=0.0:d=0.5,fade=t=out:st=0.0:d=0.5,zoompan=z='if(between(t,15.0,17.0),1.2,1)':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)',zoompan=z='if(between(t,70.0,72.0),1.5,1)':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)',zoompan=z='if(between(t,93.0,95.0),1.5,1)':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)',fade=t=in:st=96.3:d=0.5,fade=t=out:st=96.3:d=0.5[v];[0:a]afade=t=in:st=0.0:d=0.5,afade=t=out:st=0.0:d=0.5,afade=t=in:st=96.3:d=0.5,afade=t=out:st=96.3:d=0.5[a]", '-map', '[v]', '-map', '[a]', '-c:v', 'libx264', '-preset', 'medium', '-crf', '23', '-maxrate', '8M', '-bufsize', '16M', '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '192k', '-ar', '44100', '-ac', '2', '/tmp/tmp112nn0nt/output.mp4']' returned non-zero exit status 234.
+2024-11-19 16:55:39,839 - editing_instructions - ERROR - Traceback (most recent call last):
+  File "/Users/arambarnett/Downloads/ai-editor (1)/editing_instructions.py", line 320, in apply_ai_style
+    subprocess.run(cmd, check=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/subprocess.py", line 524, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['ffmpeg', '-y', '-i', '/tmp/tmpb8ju6zgl/base.mp4', '-filter_complex', "[0:v]fade=t=in:st=0.0:d=0.5,fade=t=out:st=0.0:d=0.5,zoompan=z='if(between(t,15.0,17.0),1.2,1)':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)',zoompan=z='if(between(t,70.0,72.0),1.5,1)':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)',zoompan=z='if(between(t,93.0,95.0),1.5,1)':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)',fade=t=in:st=96.3:d=0.5,fade=t=out:st=96.3:d=0.5[v];[0:a]afade=t=in:st=0.0:d=0.5,afade=t=out:st=0.0:d=0.5,afade=t=in:st=96.3:d=0.5,afade=t=out:st=96.3:d=0.5[a]", '-map', '[v]', '-map', '[a]', '-c:v', 'libx264', '-preset', 'medium', '-crf', '23', '-maxrate', '8M', '-bufsize', '16M', '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '192k', '-ar', '44100', '-ac', '2', '/tmp/tmp112nn0nt/output.mp4']' returned non-zero exit status 234.
+
+2024-11-19 16:55:39,908 - transcriber - ERROR - Error in process_videos_cloud: Failed to generate output video
+2024-11-19 16:55:39,910 - transcriber - ERROR - Traceback (most recent call last):
+  File "/Users/arambarnett/Downloads/ai-editor (1)/transcriber.py", line 487, in process_videos_cloud
+    raise ValueError("Failed to generate output video")
+ValueError: Failed to generate output video
+
+2024-11-19 16:55:39,981 - transcriber - ERROR - Error processing from GCS: Failed to process videos
+2024-11-19 16:55:39,982 - progress_tracker - INFO - Progress update for c7e82179-f272-4580-9974-0911427a69e5: error - 100% - Error: Failed to process videos
+127.0.0.1 - - [19/Nov/2024 16:55:39] "POST /api/process_from_storage HTTP/1.1" 500 -
+2024-11-19 16:55:39,983 - werkzeug - INFO - 127.0.0.1 - - [19/Nov/2024 16:55:39] "POST /api/process_from_storage HTTP/1.1" 500 -
+ * Detected change in '/Users/arambarnett/Downloads/ai-editor (1)/editing_instructions.py', reloading
+2024-11-19 16:57:51,534 - werkzeug - INFO -  * Detected change in '/Users/arambarnett/Downloads/ai-editor (1)/editing_instructions.py', reloading
+2024-11-19 16:57:51,888 - werkzeug - INFO -  * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 143-841-118
+2024-11-19 16:57:54,537 - transcriber - INFO - Loading credentials from: video-editor-credentials.json
+2024-11-19 16:57:54,807 - transcriber - INFO - FFmpeg version: 7.1
+127.0.0.1 - - [19/Nov/2024 17:00:44] "POST /api/upload-url HTTP/1.1" 200 -
+2024-11-19 17:00:44,788 - werkzeug - INFO - 127.0.0.1 - - [19/Nov/2024 17:00:44] "POST /api/upload-url HTTP/1.1" 200 -
+127.0.0.1 - - [19/Nov/2024 17:00:49] "POST /api/upload-url HTTP/1.1" 200 -
+2024-11-19 17:00:49,269 - werkzeug - INFO - 127.0.0.1 - - [19/Nov/2024 17:00:49] "POST /api/upload-url HTTP/1.1" 200 -
+127.0.0.1 - - [19/Nov/2024 17:00:51] "POST /api/upload-url HTTP/1.1" 200 -
+2024-11-19 17:00:51,412 - werkzeug - INFO - 127.0.0.1 - - [19/Nov/2024 17:00:51] "POST /api/upload-url HTTP/1.1" 200 -
+127.0.0.1 - - [19/Nov/2024 17:00:53] "POST /api/upload-url HTTP/1.1" 200 -
+2024-11-19 17:00:53,033 - werkzeug - INFO - 127.0.0.1 - - [19/Nov/2024 17:00:53] "POST /api/upload-url HTTP/1.1" 200 -
+2024-11-19 17:00:54,862 - progress_tracker - INFO - Progress update for 1bfeeca5-87ac-4363-b459-cf8116db7564: initialize - 0% - Starting cloud processing
+2024-11-19 17:00:54,871 - progress_tracker - INFO - Progress update for 1bfeeca5-87ac-4363-b459-cf8116db7564: download - 20% - Processing video 1 of 4
+2024-11-19 17:00:54,871 - transcriber - INFO - Accessing bucket: shaz-video-editor-bucket, blob: uploads/1732053644_IMG_9766.mov
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_3 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/folders/b5/lx88tlg93w98_y3_7w01s3180000gn/T/tmpw3la0a_a/input_0.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+    creation_time   : 2024-08-29T21:25:57.000000Z
+    com.apple.quicktime.make: Apple
+    com.apple.quicktime.model: iPhone 13 Pro Max
+    com.apple.quicktime.software: 17.5.1
+    com.apple.quicktime.creationdate: 2024-08-28T18:17:19-0700
+    com.apple.photos.originating.signature: AVGbVHzM/RLb9ibqswo4WzG8avjP
+  Duration: 00:00:20.10, start: 0.000000, bitrate: 7584 kb/s
+  Stream #0:0[0x1](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 97 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:25:58.000000Z
+        handler_name    : Core Media Audio
+        vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 720x1280 [SAR 1:1 DAR 9:16], 7414 kb/s, 30 fps, 30 tbr, 600 tbn (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:25:58.000000Z
+        handler_name    : Core Media Video
+        vendor_id       : [0][0][0][0]
+        encoder         : H.264
+  Stream #0:2[0x3](und): Data: none (mebx / 0x7862656D), 0 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:25:58.000000Z
+        handler_name    : Core Media Metadata
+  Stream #0:3[0x4](und): Data: none (mebx / 0x7862656D), 16 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:25:58.000000Z
+        handler_name    : Core Media Metadata
+  Stream #0:4[0x5](und): Data: none (mebx / 0x7862656D), 46 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:25:58.000000Z
+        handler_name    : Core Media Metadata
+Stream mapping:
+  Stream #0:0 -> #0:0 (aac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to '/var/folders/b5/lx88tlg93w98_y3_7w01s3180000gn/T/tmpw3la0a_a/audio_0.wav':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+    com.apple.photos.originating.signature: AVGbVHzM/RLb9ibqswo4WzG8avjP
+    com.apple.quicktime.make: Apple
+    com.apple.quicktime.model: iPhone 13 Pro Max
+    com.apple.quicktime.software: 17.5.1
+    com.apple.quicktime.creationdate: 2024-08-28T18:17:19-0700
+    ISFT            : Lavf61.7.100
+  Stream #0:0(und): Audio: pcm_s16le ([1][0][0][0] / 0x0001), 44100 Hz, mono, s16, 705 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:25:58.000000Z
+        handler_name    : Core Media Audio
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.100 pcm_s16le
+[out#0/wav @ 0x7f7c4a0059c0] video:0KiB audio:1732KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.004398%
+size=    1732KiB time=00:00:20.10 bitrate= 705.6kbits/s speed= 715x    
+2024-11-19 17:01:02,186 - progress_tracker - INFO - Progress update for 1bfeeca5-87ac-4363-b459-cf8116db7564: download - 30% - Processing video 2 of 4
+2024-11-19 17:01:02,186 - transcriber - INFO - Accessing bucket: shaz-video-editor-bucket, blob: uploads/1732053649_IMG_9767.mov
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_3 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/folders/b5/lx88tlg93w98_y3_7w01s3180000gn/T/tmpw3la0a_a/input_1.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+    creation_time   : 2024-08-29T21:26:01.000000Z
+    com.apple.quicktime.make: Apple
+    com.apple.quicktime.model: iPhone 13 Pro Max
+    com.apple.quicktime.software: 17.5.1
+    com.apple.quicktime.creationdate: 2024-08-28T18:17:44-0700
+    com.apple.photos.originating.signature: AVQAJTV8XW3qitO+dOed1+WIXEFd
+  Duration: 00:00:20.20, start: 0.000000, bitrate: 7757 kb/s
+  Stream #0:0[0x1](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 97 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:01.000000Z
+        handler_name    : Core Media Audio
+        vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 720x1280 [SAR 1:1 DAR 9:16], 7600 kb/s, 30 fps, 30 tbr, 600 tbn (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:01.000000Z
+        handler_name    : Core Media Video
+        vendor_id       : [0][0][0][0]
+        encoder         : H.264
+  Stream #0:2[0x3](und): Data: none (mebx / 0x7862656D), 0 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:01.000000Z
+        handler_name    : Core Media Metadata
+  Stream #0:3[0x4](und): Data: none (mebx / 0x7862656D), 7 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:01.000000Z
+        handler_name    : Core Media Metadata
+  Stream #0:4[0x5](und): Data: none (mebx / 0x7862656D), 42 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:01.000000Z
+        handler_name    : Core Media Metadata
+Stream mapping:
+  Stream #0:0 -> #0:0 (aac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to '/var/folders/b5/lx88tlg93w98_y3_7w01s3180000gn/T/tmpw3la0a_a/audio_1.wav':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+    com.apple.photos.originating.signature: AVQAJTV8XW3qitO+dOed1+WIXEFd
+    com.apple.quicktime.make: Apple
+    com.apple.quicktime.model: iPhone 13 Pro Max
+    com.apple.quicktime.software: 17.5.1
+    com.apple.quicktime.creationdate: 2024-08-28T18:17:44-0700
+    ISFT            : Lavf61.7.100
+  Stream #0:0(und): Audio: pcm_s16le ([1][0][0][0] / 0x0001), 44100 Hz, mono, s16, 705 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:01.000000Z
+        handler_name    : Core Media Audio
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.100 pcm_s16le
+[out#0/wav @ 0x7fcafd4059c0] video:0KiB audio:1742KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.004373%
+size=    1742KiB time=00:00:20.22 bitrate= 705.6kbits/s speed= 728x    
+2024-11-19 17:01:10,033 - progress_tracker - INFO - Progress update for 1bfeeca5-87ac-4363-b459-cf8116db7564: download - 40% - Processing video 3 of 4
+2024-11-19 17:01:10,034 - transcriber - INFO - Accessing bucket: shaz-video-editor-bucket, blob: uploads/1732053651_IMG_9768.mov
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_3 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/folders/b5/lx88tlg93w98_y3_7w01s3180000gn/T/tmpw3la0a_a/input_2.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+    creation_time   : 2024-08-29T21:26:05.000000Z
+    com.apple.quicktime.make: Apple
+    com.apple.quicktime.model: iPhone 13 Pro Max
+    com.apple.quicktime.software: 17.5.1
+    com.apple.quicktime.creationdate: 2024-08-28T18:18:09-0700
+    com.apple.photos.originating.signature: AdJQb549VkZboQjmITq4aIGROFSM
+  Duration: 00:00:18.87, start: 0.000000, bitrate: 7642 kb/s
+  Stream #0:0[0x1](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 97 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:05.000000Z
+        handler_name    : Core Media Audio
+        vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 720x1280 [SAR 1:1 DAR 9:16], 7472 kb/s, 30 fps, 30 tbr, 600 tbn (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:05.000000Z
+        handler_name    : Core Media Video
+        vendor_id       : [0][0][0][0]
+        encoder         : H.264
+  Stream #0:2[0x3](und): Data: none (mebx / 0x7862656D), 0 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:05.000000Z
+        handler_name    : Core Media Metadata
+  Stream #0:3[0x4](und): Data: none (mebx / 0x7862656D), 18 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:05.000000Z
+        handler_name    : Core Media Metadata
+  Stream #0:4[0x5](und): Data: none (mebx / 0x7862656D), 44 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:05.000000Z
+        handler_name    : Core Media Metadata
+Stream mapping:
+  Stream #0:0 -> #0:0 (aac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to '/var/folders/b5/lx88tlg93w98_y3_7w01s3180000gn/T/tmpw3la0a_a/audio_2.wav':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+    com.apple.photos.originating.signature: AdJQb549VkZboQjmITq4aIGROFSM
+    com.apple.quicktime.make: Apple
+    com.apple.quicktime.model: iPhone 13 Pro Max
+    com.apple.quicktime.software: 17.5.1
+    com.apple.quicktime.creationdate: 2024-08-28T18:18:09-0700
+    ISFT            : Lavf61.7.100
+  Stream #0:0(und): Audio: pcm_s16le ([1][0][0][0] / 0x0001), 44100 Hz, mono, s16, 705 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:05.000000Z
+        handler_name    : Core Media Audio
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.100 pcm_s16le
+[out#0/wav @ 0x7fe69e9047c0] video:0KiB audio:1626KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.004685%
+size=    1626KiB time=00:00:18.87 bitrate= 705.6kbits/s speed= 432x    
+2024-11-19 17:01:15,686 - progress_tracker - INFO - Progress update for 1bfeeca5-87ac-4363-b459-cf8116db7564: download - 50% - Processing video 4 of 4
+2024-11-19 17:01:15,686 - transcriber - INFO - Accessing bucket: shaz-video-editor-bucket, blob: uploads/1732053652_IMG_9769.mov
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_3 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/var/folders/b5/lx88tlg93w98_y3_7w01s3180000gn/T/tmpw3la0a_a/input_3.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+    creation_time   : 2024-08-29T21:26:11.000000Z
+    com.apple.quicktime.make: Apple
+    com.apple.quicktime.model: iPhone 13 Pro Max
+    com.apple.quicktime.software: 17.5.1
+    com.apple.quicktime.creationdate: 2024-08-28T18:18:36-0700
+    com.apple.photos.originating.signature: Af38TXxYDPwBGzTNepBGX+fpGtJn
+  Duration: 00:00:24.60, start: 0.000000, bitrate: 7624 kb/s
+  Stream #0:0[0x1](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 96 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:11.000000Z
+        handler_name    : Core Media Audio
+        vendor_id       : [0][0][0][0]
+  Stream #0:1[0x2](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 720x1280 [SAR 1:1 DAR 9:16], 7450 kb/s, 30 fps, 30 tbr, 600 tbn (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:11.000000Z
+        handler_name    : Core Media Video
+        vendor_id       : [0][0][0][0]
+        encoder         : H.264
+  Stream #0:2[0x3](und): Data: none (mebx / 0x7862656D), 0 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:11.000000Z
+        handler_name    : Core Media Metadata
+  Stream #0:3[0x4](und): Data: none (mebx / 0x7862656D), 20 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:11.000000Z
+        handler_name    : Core Media Metadata
+  Stream #0:4[0x5](und): Data: none (mebx / 0x7862656D), 47 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:11.000000Z
+        handler_name    : Core Media Metadata
+Stream mapping:
+  Stream #0:0 -> #0:0 (aac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to '/var/folders/b5/lx88tlg93w98_y3_7w01s3180000gn/T/tmpw3la0a_a/audio_3.wav':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+    com.apple.photos.originating.signature: Af38TXxYDPwBGzTNepBGX+fpGtJn
+    com.apple.quicktime.make: Apple
+    com.apple.quicktime.model: iPhone 13 Pro Max
+    com.apple.quicktime.software: 17.5.1
+    com.apple.quicktime.creationdate: 2024-08-28T18:18:36-0700
+    ISFT            : Lavf61.7.100
+  Stream #0:0(und): Audio: pcm_s16le ([1][0][0][0] / 0x0001), 44100 Hz, mono, s16, 705 kb/s (default)
+      Metadata:
+        creation_time   : 2024-08-29T21:26:11.000000Z
+        handler_name    : Core Media Audio
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.100 pcm_s16le
+[out#0/wav @ 0x7fef9bf30700] video:0KiB audio:2120KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.003593%
+size=    2120KiB time=00:00:24.61 bitrate= 705.6kbits/s speed= 985x    
+2024-11-19 17:01:22,344 - progress_tracker - INFO - Progress update for 1bfeeca5-87ac-4363-b459-cf8116db7564: analyze - 60% - Analyzing content
+2024-11-19 17:01:56,958 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-19 17:01:56,965 - editing_instructions - INFO - OpenAI Raw Response: {
+  "segments": [
+    {
+      "start_time": "00:00.000",
+      "end_time": "00:02.000",
+      "effect_type": "text_overlay",
+      "ffmpeg_filter": "drawtext=text='What's up, everybody? I'm out here with my boy Nye and we're about to go on a rock hunt.':fontsize=24:fontcolor=white:x=(w-text_w)/2:y=h/10:box=1:boxcolor=black@0.5",
+      "parameters": {
+        "text": "What's up, everybody? I'm out here with my boy Nye and we're about to go on a rock hunt.",
+        "position": "top",
+        "font_size": 24
+      }
+    },
+    {
+      "start_time": "00:12.000",
+      "end_time": "00:15.000",
+      "effect_type": "zoom",
+      "ffmpeg_filter": "scale=iw*1.3:-1,crop=iw/1.3:ih/1.3",
+      "parameters": {
+        "zoom": 1.3
+      }
+    },
+    {
+      "start_time": "00:20.000",
+      "end_time": "00:20.500",
+      "effect_type": "fade",
+      "ffmpeg_filter": "fade=t=in:st=00:20.000:d=0.5",
+      "parameters": {}
+    },
+    {
+      "start_time": "00:30.000",
+      "end_time": "00:35.000",
+      "effect_type": "speed_up",
+      "ffmpeg_filter": "setpts=PTS*0.5;atempo=2.0",
+      "parameters": {
+        "speed": 0.5
+      }
+    },
+    {
+      "start_time": "00:50.000",
+      "end_time": "00:52.000",
+      "effect_type": "text_overlay",
+      "ffmpeg_filter": "drawtext=text='Whoa, look at this 1. Who? What is that? It's made out of things.':fontsize=24:fontcolor=white:x=(w-text_w)/2:y=(h-text_h)/2:box=1:boxcolor=black@0.5",
+      "parameters": {
+        "text": "Whoa, look at this 1. Who? What is that? It's made out of things.",
+        "position": "center",
+        "font_size": 24
+      }
+    },
+    {
+      "start_time": "01:20.000",
+      "end_time": "01:23.000",
+      "effect_type": "zoom",
+      "ffmpeg_filter": "scale=iw*1.5:-1,crop=iw/1.5:ih/1.5",
+      "parameters": {
+        "zoom": 1.5
+      }
+    },
+    {
+      "start_time": "01:30.000",
+      "end_time": "01:30.500",
+      "effect_type": "fade",
+      "ffmpeg_filter": "fade=t=out:st=01:30.000:d=0.5",
+      "parameters": {}
+    }
+  ]
+}
+2024-11-19 17:01:56,966 - progress_tracker - INFO - Progress update for 1bfeeca5-87ac-4363-b459-cf8116db7564: edit - 80% - Processing videos
+2024-11-19 17:02:00,355 - transcriber - INFO - Running concat command: ffmpeg -y -f concat -safe 0 -i /tmp/tmpdbok4c32/concat.txt -c:v libx264 -preset medium -crf 23 -maxrate 8M -bufsize 16M -pix_fmt yuv420p -c:a aac -b:a 192k -movflags +faststart /tmp/tmpdbok4c32/base.mp4
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_3 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fa2de816740] Auto-inserting h264_mp4toannexb bitstream filter
+[concat @ 0x7fa2de904340] Could not find codec parameters for stream 2 (Unknown: none): unknown codec
+Consider increasing the value for the 'analyzeduration' (0) and 'probesize' (5000000) options
+[concat @ 0x7fa2de904340] Could not find codec parameters for stream 3 (Unknown: none): unknown codec
+Consider increasing the value for the 'analyzeduration' (0) and 'probesize' (5000000) options
+[concat @ 0x7fa2de904340] Could not find codec parameters for stream 4 (Unknown: none): unknown codec
+Consider increasing the value for the 'analyzeduration' (0) and 'probesize' (5000000) options
+Input #0, concat, from '/tmp/tmpdbok4c32/concat.txt':
+  Duration: N/A, start: -0.047891, bitrate: 7511 kb/s
+  Stream #0:0(und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 97 kb/s
+      Metadata:
+        creation_time   : 2024-08-29T21:25:58.000000Z
+        handler_name    : Core Media Audio
+        vendor_id       : [0][0][0][0]
+  Stream #0:1(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 720x1280 [SAR 1:1 DAR 9:16], 7414 kb/s, 30 fps, 30 tbr, 600 tbn
+      Metadata:
+        creation_time   : 2024-08-29T21:25:58.000000Z
+        handler_name    : Core Media Video
+        vendor_id       : [0][0][0][0]
+        encoder         : H.264
+  Stream #0:2: Unknown: none
+  Stream #0:3: Unknown: none
+  Stream #0:4: Unknown: none
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> h264 (libx264))
+  Stream #0:0 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+[libx264 @ 0x7fa2de823a80] using SAR=1/1
+[libx264 @ 0x7fa2de823a80] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0x7fa2de823a80] profile High, level 3.1, 4:2:0, 8-bit
+[libx264 @ 0x7fa2de823a80] 264 - core 164 r3108 31e19f9 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=18 lookahead_threads=3 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 vbv_maxrate=8000 vbv_bufsize=16000 crf_max=0.0 nal_hrd=none filler=0 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/tmp/tmpdbok4c32/base.mp4':
+  Metadata:
+    encoder         : Lavf61.7.100
+  Stream #0:0(und): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 720x1280 [SAR 1:1 DAR 9:16], q=2-31, 30 fps, 15360 tbn
+      Metadata:
+        creation_time   : 2024-08-29T21:25:58.000000Z
+        handler_name    : Core Media Video
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.100 libx264
+      Side data:
+        cpb: bitrate max/min/avg: 8000000/0/0 buffer size: 16000000 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 192 kb/s
+      Metadata:
+        creation_time   : 2024-08-29T21:25:58.000000Z
+        handler_name    : Core Media Audio
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.100 aac
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fa2dea19740] Auto-inserting h264_mp4toannexb bitstream filter37x     
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fa2e0d0a780] Auto-inserting h264_mp4toannexb bitstream filter57x    
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7fa2de8b5f80] Auto-inserting h264_mp4toannexb bitstream filter45x    
+[mp4 @ 0x7fa2de817e40] Starting second pass: moving the moov atom to the beginning of the file    
+[out#0/mp4 @ 0x7fa2de821b40] video:39143KiB audio:2000KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.215130%
+frame= 2513 fps= 95 q=-1.0 Lsize=   41231KiB time=00:01:23.76 bitrate=4032.2kbits/s speed=3.17x    
+[libx264 @ 0x7fa2de823a80] frame I:23    Avg QP:22.19  size: 51206
+[libx264 @ 0x7fa2de823a80] frame P:1128  Avg QP:24.91  size: 25993
+[libx264 @ 0x7fa2de823a80] frame B:1362  Avg QP:27.42  size:  7037
+[libx264 @ 0x7fa2de823a80] consecutive B-frames: 11.5% 47.2%  4.2% 37.1%
+[libx264 @ 0x7fa2de823a80] mb I  I16..4: 14.8% 70.6% 14.6%
+[libx264 @ 0x7fa2de823a80] mb P  I16..4:  9.1% 28.5%  2.9%  P16..4: 34.7% 11.7%  4.9%  0.0%  0.0%    skip: 8.2%
+[libx264 @ 0x7fa2de823a80] mb B  I16..4:  1.4%  3.6%  0.3%  B16..8: 41.1%  4.9%  0.8%  direct: 2.5%  skip:45.2%  L0:38.5% L1:51.1% BI:10.5%
+[libx264 @ 0x7fa2de823a80] 8x8 transform intra:70.0% inter:82.0%
+[libx264 @ 0x7fa2de823a80] coded y,uvDC,uvAC intra: 49.3% 67.3% 17.3% inter: 18.6% 20.1% 1.0%
+[libx264 @ 0x7fa2de823a80] i16 v,h,dc,p: 29% 27% 15% 29%
+[libx264 @ 0x7fa2de823a80] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 25% 19% 20%  5%  6%  7%  6%  6%  6%
+[libx264 @ 0x7fa2de823a80] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 23% 19% 13%  6% 10%  9%  9%  6%  5%
+[libx264 @ 0x7fa2de823a80] i8c dc,h,v,p: 47% 22% 23%  8%
+[libx264 @ 0x7fa2de823a80] Weighted P-Frames: Y:4.3% UV:1.2%
+[libx264 @ 0x7fa2de823a80] ref P L0: 70.7% 21.6%  6.0%  1.7%  0.1%
+[libx264 @ 0x7fa2de823a80] ref B L0: 96.4%  3.1%  0.5%
+[libx264 @ 0x7fa2de823a80] ref B L1: 99.5%  0.5%
+[libx264 @ 0x7fa2de823a80] kb/s:3826.40
+[aac @ 0x7fa2de8a3580] Qavg: 526.684
+2024-11-19 17:02:27,334 - editing_instructions - INFO - Running FFmpeg command: ffmpeg -y -i /tmp/tmpdbok4c32/base.mp4 -filter_complex [0:v]select='between(t,12.0,15.0)',scale=iw*1.3:-1,crop=iw/1.3:ih/1.3:x='(iw-ow)/2':y='(ih-oh)/2',fade=t=in:st=20.0:d=0.5,fade=t=out:st=20.0:d=0.5,select='between(t,30.0,35.0)',setpts=PTS/0.5,select='between(t,80.0,83.0)',scale=iw*1.5:-1,crop=iw/1.5:ih/1.5:x='(iw-ow)/2':y='(ih-oh)/2',fade=t=in:st=90.0:d=0.5,fade=t=out:st=90.0:d=0.5[v];[0:a]afade=t=in:st=20.0:d=0.5,afade=t=out:st=20.0:d=0.5,aselect='between(t,30.0,35.0)',atempo=0.5,afade=t=in:st=90.0:d=0.5,afade=t=out:st=90.0:d=0.5[a] -map [v] -map [a] -c:v libx264 -preset medium -crf 23 -maxrate 8M -bufsize 16M -pix_fmt yuv420p -c:a aac -b:a 192k -ar 44100 -ac 2 /tmp/tmpcwxg37ip/output.mp4
+ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+  built with Apple clang version 16.0.0 (clang-1600.0.26.4)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/7.1_3 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags='-Wl,-ld_classic' --enable-ffplay --enable-gnutls --enable-gpl --enable-libaom --enable-libaribb24 --enable-libbluray --enable-libdav1d --enable-libharfbuzz --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librav1e --enable-librist --enable-librubberband --enable-libsnappy --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libtesseract --enable-libtheora --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libxvid --enable-lzma --enable-libfontconfig --enable-libfreetype --enable-frei0r --enable-libass --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libspeex --enable-libsoxr --enable-libzmq --enable-libzimg --disable-libjack --disable-indev=jack --enable-videotoolbox --enable-audiotoolbox
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.100 / 61. 19.100
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/tmp/tmpdbok4c32/base.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.100
+  Duration: 00:01:23.81, start: 0.023991, bitrate: 4030 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 720x1280 [SAR 1:1 DAR 9:16], 3826 kb/s, 29.99 fps, 30 tbr, 15360 tbn (default)
+      Metadata:
+        handler_name    : Core Media Video
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.19.100 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 195 kb/s (default)
+      Metadata:
+        handler_name    : Core Media Audio
+        vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 (h264) -> select:default
+  Stream #0:1 (aac) -> afade:default
+  fade:default -> Stream #0:0 (libx264)
+  afade:default -> Stream #0:1 (aac)
+Press [q] to stop, [?] for help
+[out_#0:1 @ 0x7f978d11c640] 100 buffers queued in out_#0:1, something may be wrong.
+[fc#0 @ 0x7f978d420680] [vo0->#0:0 @ 0x7f978d010200] No filtered frames for output stream, trying to initialize anyway.
+[libx264 @ 0x7f978d00c980] using SAR=1/1
+[libx264 @ 0x7f978d00c980] MB rate (55296000) > level limit (16711680)
+[libx264 @ 0x7f978d00c980] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0x7f978d00c980] profile High, level 6.2, 4:2:0, 8-bit
+[libx264 @ 0x7f978d00c980] 264 - core 164 r3108 31e19f9 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=18 lookahead_threads=3 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 vbv_maxrate=8000 vbv_bufsize=16000 crf_max=0.0 nal_hrd=none filler=0 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/tmp/tmpcwxg37ip/output.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.7.100
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(progressive), 720x1280 [SAR 1:1 DAR 9:16], q=2-31, 15360 tbn
+      Metadata:
+        encoder         : Lavc61.19.100 libx264
+      Side data:
+        cpb: bitrate max/min/avg: 8000000/0/0 buffer size: 16000000 vbv_delay: N/A
+  Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 192 kb/s
+      Metadata:
+        encoder         : Lavc61.19.100 aac
+[out#0/mp4 @ 0x7f978d00b7c0] video:0KiB audio:3KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 98.082822%
+frame=    0 fps=0.0 q=0.0 Lsize=       5KiB time=N/A bitrate=N/A speed=N/A    
+[aac @ 0x7f978d009900] Qavg: 65536.000
+2024-11-19 17:02:29,567 - progress_tracker - INFO - Progress update for 1bfeeca5-87ac-4363-b459-cf8116db7564: upload - 90% - Uploading final video
+127.0.0.1 - - [19/Nov/2024 17:02:29] "POST /api/process_from_storage HTTP/1.1" 200 -
+2024-11-19 17:02:29,704 - werkzeug - INFO - 127.0.0.1 - - [19/Nov/2024 17:02:29] "POST /api/process_from_storage HTTP/1.1" 200 -
+ * Detected change in '/Users/arambarnett/Downloads/ai-editor (1)/editing_instructions.py', reloading
+2024-11-19 17:05:09,357 - werkzeug - INFO -  * Detected change in '/Users/arambarnett/Downloads/ai-editor (1)/editing_instructions.py', reloading
+2024-11-19 17:05:09,879 - werkzeug - INFO -  * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 143-841-118
+2024-11-19 17:05:12,843 - transcriber - INFO - Loading credentials from: video-editor-credentials.json
+2024-11-19 17:05:13,233 - transcriber - INFO - FFmpeg version: 7.1

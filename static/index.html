@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Links -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <link
+      rel="preload"
+      href="./fonts/francy.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!-- Styles -->
+    <style>
+      @font-face {
+        font-family: "Francy";
+        src: url("./fonts/francy.woff2") format("woff2");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
+
+    <!-- Title -->
+    <title>Shaz Didnt Help</title>
+  </head>
+  <body>
+    <!-- Main -->
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <img src="./images/Screenshot_2024-11-14_at_5.51.15_PM-removebg-preview.png" alt="" class="logo-img" />
+
+          <img src="./images/edit-title.svg" alt="" class="edit-title-img" />
+
+          <!-- Updated upload button with progress text -->
+          <div id="uploadBtn" class="primary-btn-wrapper">
+            <div class="primary-btn-container">
+              <div class="primary-btn">
+                <p class="state-1-text active">Upload Footage</p>
+                <p class="state-2-text">Choose Style</p>
+                <p class="state-3-text">Processing...</p>
+                <p class="state-4-text">Done. Click to Download</p>
+                <div class="effect-1"></div>
+                <div class="effect-2"></div>
+                <div id="progressBar" style="display: none;">
+                  <div id="progressFill"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Updated file input for multiple files -->
+          <input 
+            type="file" 
+            id="fileInput" 
+            name="files" 
+            accept="video/*" 
+            multiple 
+            required 
+            style="display: none;"
+          >
+
+          <!-- Progress text display -->
+          <p id="progressText" style="display: none; text-align: center; margin-top: 10px;"></p>
+
+          <!-- Style options -->
+          <div id="styleOptions" style="display: none;">
+            <h3>Choose a Style:</h3>
+            <div class="features-wrapper">
+              <div class="feature" data-style="Fast & Energized">
+                <div class="feature-container">
+                  <p>Fast & Energized</p>
+                </div>
+              </div>
+              <div class="feature" data-style="Moderate">
+                <div class="feature-container">
+                  <p>Moderate</p>
+                </div>
+              </div>
+              <div class="feature" data-style="Slow & Smooth">
+                <div class="feature-container">
+                  <p>Slow & Smooth</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Start over button -->
+          <div id="startOverBtn" class="secondary-btn-wrapper" style="display: none;">
+            <div class="secondary-btn-container">
+              <div class="secondary-btn">
+                <p>Start Over</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- File details section -->
+          <div class="file-details" style="display: none;">
+            <div id="fileList"></div>
+            <div class="selected-style"></div>
+          </div>
+
+          <!-- Add this right after the file-details div -->
+          <div class="progress-container" style="display: none;">
+            <div id="current-stage">Initializing...</div>
+            <div id="stage-details"></div>
+            <div class="progress-bar">
+              <div id="progress-fill"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Body bg effects -->
+    <img
+      src="./images/body-bg-effect-1.png"
+      alt=""
+      class="body-bg-effect-1-img"
+    />
+    <img
+      src="./images/body-bg-effect-2.png"
+      alt=""
+      class="body-bg-effect-2-img"
+    />
+    <img
+      src="./images/body-bg-effect-3.png"
+      alt=""
+      class="body-bg-effect-3-img"
+    />
+    <img
+      src="./images/body-bg-effect-4.png"
+      alt=""
+      class="body-bg-effect-4-img"
+    />
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js"></script>
+
+    <!-- Add this script at the bottom of the body to verify elements exist -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('Progress elements check:', {
+            container: !!document.querySelector('.progress-container'),
+            stage: !!document.getElementById('current-stage'),
+            details: !!document.getElementById('stage-details'),
+            progressFill: !!document.getElementById('progress-fill')
+        });
+    });
+    </script>
+  </body>
+</html>

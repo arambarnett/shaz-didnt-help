@@ -1,0 +1,87 @@
+AI VIDEO EDITOR - OVERVIEW & ISSUES
+
+OVERVIEW
+========
+This application:
+1. Takes multiple video uploads
+2. Uses OpenAI to analyze content
+3. Applies automated effects:
+   - Speed changes
+   - Zooms
+   - Fades
+4. Processes using FFmpeg
+5. Stores in Google Cloud Storage
+
+KEY COMPONENTS
+=============
+1. Core Files:
+   - app.py: Flask server & API endpoints
+   - transcriber.py: Video processing & OpenAI integration
+   - editing_instructions.py: FFmpeg effects & editing logic
+   - progress_tracker.py: Processing status tracking
+
+2. Flow:
+   - User uploads videos -> stored in GCS
+   - OpenAI analyzes content
+   - FFmpeg applies effects
+   - Final video returned to user
+
+CURRENT PROBLEMS
+===============
+1. Video Output Issues:
+   - No audio in final output
+   - Audio sync problems
+   - Effect timing incorrect
+   - Duration calculation errors
+
+2. Processing Problems:
+   - FFmpeg filter chain errors
+   - Stream mapping inconsistencies
+   - Effect application failures
+   - Style application not working
+
+SETUP INSTRUCTIONS
+=================
+1. Prerequisites:
+   - Python 3.10+
+   - FFmpeg 7.1
+   - Google Cloud Storage account
+   - OpenAI API key
+   - Docker
+
+2. Environment:
+   - Create .env with OPENAI_API_KEY and GCS_BUCKET_NAME
+   - Add video-editor-credentials.json to root
+
+3. Local Development:
+   - pip install -r requirements.txt
+   - python app.py
+   - Access at http://localhost:8080
+
+4. Docker:
+   - docker build -t video-editor:latest .
+   - docker run -p 8080:8080 -e OPENAI_API_KEY=key -v credentials.json:/app/credentials.json video-editor:latest
+
+PRIORITY FIXES
+=============
+1. FFmpeg Filter Chain:
+   - Fix filter syntax in editing_instructions.py
+   - Ensure proper stream mapping
+   - Fix timing issues
+
+2. Audio Handling:
+   - Maintain audio sync
+   - Fix audio stream mapping
+   - Sync effects with audio
+
+3. Video Processing:
+   - Fix duration calculations
+   - Improve effect synchronization
+   - Fix style application
+
+TESTING
+=======
+Use provided test files:
+- test_full_flow.py: End-to-end testing
+- test_performance.py: Load testing
+- test_cloud_storage.py: Storage testing 

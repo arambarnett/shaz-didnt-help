@@ -1,0 +1,25 @@
+.progress-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.progress-status,
+.progress-details,
+.stage-text,
+.details-text {
+    display: block !important;
+    visibility: visible !important;
+}
+
+.stage-upload .progress-fill { background: linear-gradient(90deg, #2196F3, #03A9F4); }
+.stage-process .progress-fill { background: linear-gradient(90deg, #9C27B0, #E91E63); }
+.stage-finalize .progress-fill { background: linear-gradient(90deg, #4CAF50, #8BC34A); }
+.stage-error .progress-fill { background: linear-gradient(90deg, #f44336, #ff5722); } 

@@ -1,0 +1,10 @@
+# List service account roles
+gcloud projects get-iam-policy video-editor-441419 \
+    --flatten="bindings[].members" \
+    --format='table(bindings.role)' \
+    --filter="bindings.members:video-editor-sa@video-editor-441419.iam.gserviceaccount.com"
+
+
+
+gcloud billing accounts describe 01B0D0-A7FB8D-AA6B68
+
