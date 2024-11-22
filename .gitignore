@@ -5,12 +5,15 @@ __pycache__/
 .Python
 env/
 venv/
-*.egg-info/
 
 # Environment & Credentials
 .env
-video-editor-credentials.json
-*.json
+*.env
+service.yaml
+*credentials*.json
+*.key
+*.pem
+*.crt
 
 # Temporary files
 /tmp/
@@ -27,4 +30,5 @@ video-editor-credentials.json
 .idea/
 *.swp
 
-# Logsservice.yaml
+# Logs
+*.log
